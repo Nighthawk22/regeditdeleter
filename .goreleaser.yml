@@ -4,11 +4,12 @@ project_name: regeditdeleter
 builds:
 - env:
   - CGO_ENABLED=0
-- binary:
+  binary:
   goos:
     - windows
   goarch:
     - amd64
+  main: ./cmd/regeditdeleter/main.go
 archive:
   replacements:
     darwin: Darwin
