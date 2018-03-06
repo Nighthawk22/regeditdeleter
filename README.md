@@ -9,7 +9,7 @@ The idea is that this application will be run within a bat script as Administrat
 
 Call:
 ```
-regeditdeleter.exe --root LOCAL_MACHINE --path SYSTEM\CurrentControlSet\Control\Lsa\LmCompatibilityLevel
+regeditdeleter.exe --root LOCAL_MACHINE --path SYSTEM\CurrentControlSet\Control\Lsa\LmCompatibilityLevel --sub true
 ```
 
 ## Parameters
@@ -18,6 +18,8 @@ regeditdeleter.exe --root LOCAL_MACHINE --path SYSTEM\CurrentControlSet\Control\
 | ---------- | ------------------------------------------------|
 | root       | The root of the registry. E.g.: `LOCAL_MACHINE` |
 | path       | The path to the key to be deleted without the root. E.g.: `SYSTEM\CurrentControlSet\Control\Lsa\LmCompatibilityLevel` |
+| sub        | Use if the key is a sub key or value of the key before |
+
 
 ### Possible roots
 
